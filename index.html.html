@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LIRANET</title>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0d1b2a;
+  color: white;
+}
+
+/* MENU */
+nav {
+  position: fixed;
+  width: 100%;
+  background: rgba(13,27,42,0.9);
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* HEADER */
+header {
+  height: 100vh;
+  background: linear-gradient(90deg, #00b4d8, #0077b6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+header h1 {
+  font-size: 60px;
+}
+
+header p {
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+.btn {
+  padding: 15px 30px;
+  background: white;
+  color: #0077b6;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px;
+  display: inline-block;
+}
+
+/* SEÇÕES */
+section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #00b4d8;
+  margin-bottom: 30px;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #1b263b;
+  padding: 30px;
+  border-radius: 15px;
+  width: 280px;
+  text-align: center;
+}
+
+/* GALERIA */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.galeria img {
+  width: 300px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+footer {
+  background: #1b263b;
+  text-align: center;
+  padding: 20px;
+  color: #ccc;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#">Início</a>
+  <a href="#sobre">Sobre</a>
+  <a href="#comunidade">Comunidade</a>
+  <a href="#galeria">Ações</a>
+</nav>
+
+<header>
+  <h1>LIRANET</h1>
+  <p>Internet de alta qualidade para Vila Elim - Moju</p>
+
+  <a href="https://wa.me/5591985805514" class="btn">
+    Verificar disponibilidade
+  </a>
+
+  <a href="#galeria" class="btn">
+    Ver ações da comunidade
+  </a>
+</header>
+
+<section id="sobre">
+  <h2>Quem somos</h2>
+  <div class="card">
+    <p>
+      A LIRANET nasceu com o propósito de levar internet de qualidade para
+      nossa região, com estabilidade, confiança e atendimento próximo.
+    </p>
+  </div>
+</section>
+
+<section id="comunidade">
+  <h2>Nosso compromisso com a comunidade</h2>
+  <div class="card">
+    <p>
+      Trabalhamos para conectar pessoas, ajudar no acesso à educação,
+      fortalecer o comércio local e gerar oportunidades para todos.
+    </p>
+  </div>
+</section>
+
+<section id="galeria">
+  <h2>Nossas ações na comunidade</h2>
+
+ <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center; align-items:center;">
+
+  <!-- IMAGEM -->
+  <img src="liranet.png" 
+       alt="Ação da LIRANET" 
+       style="width:100%; max-width:350px; border-radius:12px;">
+
+  <!-- VÍDEO -->
+  <video controls 
+         style="width:100%; max-width:350px; border-radius:12px;">
+    <source src="liranetv.MOV" type="video/mp4">
+    Seu navegador não suporta vídeo.
+  </video>
+
+</div>
+</section>
+
+<section>
+  <h2>Por que escolher a LIRANET?</h2>
+  <div class="cards">
+    <div class="card">⚡ Internet estável</div>
+    <div class="card">📡 Alta qualidade</div>
+    <div class="card">🤝 Atendimento próximo</div>
+  </div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/5591985805514" target="_blank">
+  WhatsApp
+</a>
+
+<footer>
+  © 2026 LIRANET - Vila Elim - Moju
+</footer>
+
+</body>
+</html>
